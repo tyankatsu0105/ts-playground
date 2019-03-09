@@ -1,4 +1,5 @@
-var path = require('path');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const path = require('path');
 
 module.exports = {
  
@@ -6,9 +7,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.ts$/,
-        use: 'ts-loader'
-      }
+        test: /\.ts?$/,
+        loader: 'babel-loader',
+      },
     ]
   },
   devServer: {
@@ -16,6 +17,7 @@ module.exports = {
     open: true
   },
   resolve: {
+    plugins: [new TsconfigPathsPlugin({ configFile: path.join(__dirname, 'tsconfig.json') })],
     extensions: [
       '.ts',
       '.js'
