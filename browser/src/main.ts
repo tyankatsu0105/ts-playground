@@ -18,3 +18,4 @@ const double = (number:number):number => {
 }
 
 console.log(10 |> double);
+
