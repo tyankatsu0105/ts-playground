@@ -2,7 +2,7 @@ const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const path = require('path');
 
 module.exports = {
- 
+  target: 'node',
   entry: path.join(__dirname, 'src/main.ts'),
   output: {
     //  出力ファイルのディレクトリ名
