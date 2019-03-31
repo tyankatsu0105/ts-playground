@@ -1,3 +1,6 @@
 import {NAME} from '@const'
+import Greeting from './Greeting';
 
-console.log(NAME);
+const greeting = new Greeting(NAME);
+
+console.log(greeting.hello());

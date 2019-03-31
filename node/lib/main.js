@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/Greeting.ts":
+/*!*************************!*\
+  !*** ./src/Greeting.ts ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar Greeting = (function () {\n    function Greeting(name) {\n        this.name = name;\n    }\n    ;\n    Greeting.prototype.hello = function () {\n        return \"Hello! \" + this.name + \" :)\";\n    };\n    ;\n    Greeting.prototype.goodbye = function () {\n        return \"Goodbye! \" + this.name + \"... :_(\";\n    };\n    ;\n    return Greeting;\n}());\nexports.default = Greeting;\n\n\n//# sourceURL=webpack:///./src/Greeting.ts?");
+
+/***/ }),
+
 /***/ "./src/const/index.ts":
 /*!****************************!*\
   !*** ./src/const/index.ts ***!
@@ -106,7 +118,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexport
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar _const_1 = __webpack_require__(/*! @const */ \"./src/const/index.ts\");\nconsole.log(_const_1.NAME);\n\n\n//# sourceURL=webpack:///./src/main.ts?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar _const_1 = __webpack_require__(/*! @const */ \"./src/const/index.ts\");\nvar Greeting_1 = __importDefault(__webpack_require__(/*! ./Greeting */ \"./src/Greeting.ts\"));\nvar greeting = new Greeting_1.default(_const_1.NAME);\nconsole.log(greeting.hello());\n\n\n//# sourceURL=webpack:///./src/main.ts?");
 
 /***/ })
 
