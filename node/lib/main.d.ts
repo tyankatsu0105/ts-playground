@@ -1,2 +1,1 @@
-declare const sayHello: (name: string) => Promise<string>;
-declare const fn: () => Promise<void>;
+export declare function readFile(path: string): string;
